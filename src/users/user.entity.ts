@@ -22,7 +22,7 @@ export class User {
   password: string;
 
   @Column({ type: 'enum', enum: Role, default: Role.USER })
-  role: Role;
+  role: string;
 
   @CreateDateColumn()
   createdAt: Date;
